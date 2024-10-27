@@ -20,8 +20,66 @@
         android:textSize="50sp"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:fontFamily="@font/InknutAntiqua-Regular.ttf"
+        android:fontFamily="serif"
         />
+
+    <TextView
+        android:id="@+id/tvhello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvjudul"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvjudul"
+        android:text="@string/hello"
+        android:fontFamily="serif"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+
+        />
+    <TextView
+        android:id="@+id/tvusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tvhello"
+        app:layout_constraintTop_toBottomOf="@id/tvhello"
+        app:layout_constraintEnd_toEndOf="@id/tvhello"
+        android:text="@string/username"
+        android:fontFamily="serif"
+        android:textSize="25sp"
+        android:layout_marginStart="40dp"
+
+        />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="serif"
+        android:text="@string/indonesian"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvusername"
+
+        />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/bt1"
+        app:layout_constraintTop_toBottomOf="@id/tvusername"
+        android:text="@string/western"
+        android:background="@drawable/not_choose_rounded"
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+
+        />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
