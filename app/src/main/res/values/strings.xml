@@ -6,5 +6,23 @@
     <string name="western">Western</string>
     <string name="foodind1">Batagor</string>
     <string name="foodind2">Rendang</string>
+    <string name="isibahan1">
+        1. Tahu \n
+        2. Ikan Tenggiri\n
+        3. Tepung Terigu\n
+        4. Bawang Putih\n
+        5. Merica Bubuk\n
+        6. Garam\n
+        7. Minyak Goreng\
+        8. Tepung
+    </string><string name="isilangkah1">
+        1. Campurkan Bahan: Dalam mangkuk, campurkan ikan tenggiri yang telah digiling, bawang putih, merica, garam, dan tepung terigu. Aduk hingga merata.\n
+2. Siapkan Tahu: Ambil potongan tahu, dan isi dengan campuran ikan.\n
+3. Panaskan minyak dalam wajan. Goreng tahu yang sudah diisi hingga kecokelatan.\n
+4. Angkat dan tiriskan. Sajikan batagor dengan sambal kacang.Campurkan Bahan: Dalam mangkuk, campurkan ikan tenggiri yang telah digiling, bawang putih, merica, garam, dan tepung terigu. Aduk hingga merata.\n
+5. Siapkan Tahu: Ambil potongan tahu, dan isi dengan campuran ikan.\n
+6. Panaskan minyak dalam wajan. Goreng tahu yang sudah diisi hingga kecokelatan.\n
+7. Angkat dan tiriskan. Sajikan batagor dengan sambal kacang.\n
+    </string>
 
 </resources>
