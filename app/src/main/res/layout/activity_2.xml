@@ -7,4 +7,85 @@
     android:layout_height="match_parent"
     tools:context=".Activity2">
 
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/foodind1"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judul"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/batagor"
+        />
+    <FrameLayout
+        android:id="@+id/flbahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv"
+        app:layout_constraintStart_toStartOf="@id/iv"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="-30dp">
+
+        <TextView
+            android:id="@+id/bahan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bahan-Bahan:"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/isibahan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:text="@string/isibahan1"
+            android:fontFamily="serif"
+            android:textSize="20sp" />
+
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fllangkah"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/flbahan"
+        app:layout_constraintStart_toStartOf="@id/flbahan"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:id="@+id/langkah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bahan-Bahan:"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/isilangkah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:text="@string/isilangkah1"
+            android:fontFamily="serif"
+            android:textSize="20sp" />
+
+
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
