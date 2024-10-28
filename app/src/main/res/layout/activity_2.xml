@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Activity2">
+    android:layout_height="wrap_content"
+    tools:context=".Activity2"
+    android:paddingBottom="40dp"
+    >
 
     <TextView
         android:id="@+id/judul"
@@ -20,6 +27,18 @@
         android:fontFamily="serif"
         />
 
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/judul"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/back_to_activity1"
+
+        />
+
     <ImageView
         android:id="@+id/iv"
         android:layout_width="250dp"
@@ -29,6 +48,7 @@
         app:layout_constraintTop_toBottomOf="@id/judul"
         android:layout_marginTop="40dp"
         android:src="@mipmap/batagor"
+        android:contentDescription="@string/foodind1"
         />
     <FrameLayout
         android:id="@+id/flbahan"
@@ -43,7 +63,7 @@
             android:id="@+id/bahan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bahan-Bahan:"
+            android:text="@string/bahan"
             android:textStyle="bold"
             android:fontFamily="serif"
             android:textSize="30sp" />
@@ -57,9 +77,9 @@
             android:text="@string/isibahan1"
             android:fontFamily="serif"
             android:textSize="20sp" />
-
-
     </FrameLayout>
+
+
     <FrameLayout
         android:id="@+id/fllangkah"
         android:layout_width="300dp"
@@ -71,7 +91,7 @@
             android:id="@+id/langkah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bahan-Bahan:"
+            android:text="@string/langkah"
             android:textStyle="bold"
             android:fontFamily="serif"
             android:textSize="30sp" />
@@ -85,7 +105,23 @@
             android:text="@string/isilangkah1"
             android:fontFamily="serif"
             android:textSize="20sp" />
-
-
     </FrameLayout>
+
+
+        <Button
+            android:id="@+id/btnyoutube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="serif"
+            android:text="Video Tutorial"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fllangkah"
+            tools:ignore="TextContrastCheck,VisualLintBounds" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
