@@ -23,36 +23,45 @@
         android:fontFamily="serif"
         />
 
-    <TextView
-        android:id="@+id/tvhello"
+    <FrameLayout
+        android:id="@+id/f"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
+        android:paddingTop="16dp"
+        app:layout_constraintBottom_toTopOf="@id/bt1"
+        app:layout_constraintStart_toStartOf="@id/bt1"
         app:layout_constraintTop_toBottomOf="@id/tvjudul"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/tvjudul"
-        android:text="@string/hello"
-        android:fontFamily="serif"
-        android:textSize="30sp"
-        android:layout_marginTop="10dp"
+        tools:ignore="TextSizeCheck">
 
-        />
-    <TextView
-        android:id="@+id/tvusername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@id/tvhello"
-        app:layout_constraintTop_toBottomOf="@id/tvhello"
-        app:layout_constraintEnd_toEndOf="@id/tvhello"
-        android:text="@string/username"
-        android:fontFamily="serif"
-        android:textSize="25sp"
-        android:layout_marginStart="40dp"
 
-        />
+        <TextView
+            android:id="@+id/tvhello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/hello"
+            android:textSize="35sp"
+            app:layout_constraintStart_toStartOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/tvusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="serif"
+            android:text="@string/username"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="parent"
+
+
+            />
+    </FrameLayout>
 
     <Button
         android:id="@+id/bt1"
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="48dp"
@@ -60,26 +69,100 @@
         android:fontFamily="serif"
         android:text="@string/indonesian"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvusername"
+        app:layout_constraintTop_toBottomOf="@id/f" />
 
-        />
 
     <Button
         android:id="@+id/bt2"
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/bt1"
-        app:layout_constraintTop_toBottomOf="@id/tvusername"
-        android:text="@string/western"
+        android:layout_marginStart="20dp"
         android:background="@drawable/not_choose_rounded"
         android:fontFamily="serif"
+        android:text="@string/western"
         android:textColor="@color/black"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="50dp"
-
-        />
-
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/bt1"
+        app:layout_constraintTop_toTopOf="@id/bt1"
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        tools:ignore="TextContrastCheck,VisualLintBounds" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="80dp"
+        app:layout_constraintStart_toStartOf="@id/bt1"
+        app:layout_constraintTop_toBottomOf="@id/bt1"
+
+        >
+
+        <FrameLayout
+            android:id="@+id/f1"
+            android:layout_width="270dp"
+            android:layout_height="500dp"
+            android:background="@drawable/rounded_button"
+
+            >
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/indonesian"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/batagor"
+            app:layout_constraintStart_toStartOf="@id/bt1"
+            app:layout_constraintTop_toBottomOf="@id/bt1"
+            android:paddingVertical="40dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="35sp"
+                android:fontFamily="serif"
+                android:text="@string/foodind1"
+                android:textColor="@color/white"
+                />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/f2"
+            android:layout_width="270dp"
+            android:layout_height="500dp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginStart="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/indonesian"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/rendang"
+                app:layout_constraintStart_toStartOf="@id/bt1"
+                app:layout_constraintTop_toBottomOf="@id/bt1"
+                android:paddingVertical="40dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="35sp"
+                android:fontFamily="serif"
+                android:text="@string/foodind2"
+                android:textColor="@color/white"
+                />
+        </FrameLayout>
+</LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

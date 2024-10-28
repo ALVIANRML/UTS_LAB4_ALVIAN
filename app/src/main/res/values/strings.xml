@@ -4,5 +4,7 @@
     <string name="username">chef, John</string>
     <string name="indonesian">Indonesian</string>
     <string name="western">Western</string>
+    <string name="foodind1">Batagor</string>
+    <string name="foodind2">Rendang</string>
 
 </resources>
