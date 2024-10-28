@@ -3,6 +3,8 @@ package com.example.uts_lab4_alvian
 import android.content.Intent
 import android.os.Bundle
 import android.widget.FrameLayout
+import android.widget.HorizontalScrollView
+import android.widget.ScrollView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +24,7 @@ class Activity1 : AppCompatActivity() {
             insets
         }
         val f1: FrameLayout = findViewById(R.id.f1)
+        val f2: FrameLayout = findViewById(R.id.f2)
 
         // Set OnClickListener untuk f1
         f1.setOnClickListener {
@@ -29,5 +32,7 @@ class Activity1 : AppCompatActivity() {
             val intent = Intent(this@Activity1, Activity2::class.java)
             startActivity(intent)
         }
+        val scrollView = findViewById<HorizontalScrollView>(R.id.scrollbutton)
+        val scrollimage = findViewById<HorizontalScrollView>(R.id.scrollbuttonimage)
     }
 }
