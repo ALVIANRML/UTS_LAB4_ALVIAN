@@ -4,8 +4,10 @@
     <string name="username">chef, John</string>
     <string name="indonesian">Indonesian</string>
     <string name="western">Western</string>
+    <string name="korean">Korean</string>
     <string name="foodind1">Batagor</string>
     <string name="foodind2">Rendang</string>
+    <string name="video">Video Tutorial</string>
     <string name="bahan">Bahan-Bahan:</string>
     <string name="langkah">Langkah-Langkah:</string>
     <string name="isibahan1">

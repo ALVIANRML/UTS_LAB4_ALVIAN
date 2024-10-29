@@ -24,7 +24,7 @@
         <activity
             android:name=".Activity2"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,7 +34,7 @@
         <activity
             android:name=".Activity1"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight">
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -114,7 +114,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_button"
             android:fontFamily="serif"
-            android:text="Video Tutorial"
+            android:text="@string/video"
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
